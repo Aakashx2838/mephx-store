@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Link to import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Meta tags for browser info -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Blog</title>
+    <!-- Link to website's CSS files and Icon/Logo for website -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/faqstyle.css">
+    <!-- Fontawesome script to use icons -->
+    <script src="https://kit.fontawesome.com/86f6b8ce70.js" crossorigin="anonymous"></script>
+    <!-- Link to websites main javascript file -->
+    <script defer src="js/main.js" ></script>
+</head>
+<body>
+    <!-- Navbar that will be visible over 1100 px width (Desktop view) -->
+    <nav id="opacityManipulation">
+        <a href="index.html" class="nav-icon"><img class="nav-icon" src="images/icon.png"></a>
+        <a href="index.html">mephx</a>
+        <div class="main-nav-link">
+            <ul>
+                <li><a href="index.html" class="main-nav-link-a">Home</a></li>
+                <li><a href="blog.html" class="main-nav-link-a active">Blog</a></li>
+                <li><a href="contact.html" class="main-nav-link-a">Contact</a></li>
+                <li><a href="research.html" class="main-nav-link-a">Research</a></li>
+                <li>
+                    <div class="navbar-search">
+                        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                        <input type="search" name="Search" id="" placeholder="Search">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars fa-3x icon-edit" onclick="mobileNavbar()"></i>
+    </nav>
+    <!-- End of Navbar that will be visible over 1100 px width (Desktop view) -->
+    
+    <!-- Navbar that will be visible after 1100 px width (Mobile view) -->
+    <nav class="mobileNavbar" id="mobileNavbar">
+        <i class="fa-solid fa-bars fa-3x icon-edit" onclick="mobileNavbar()"></i>
+        <div class="mobile-icon-name-container">
+            <a href="index.html" class="nav-icon"><img class="mobile-nav-icon" src="images/icon.png"></a>
+            <a href="index.html" class="mobile-nav-name">mephx</a>
+        </div>
+        <div class="main-nav-link-mobile">
+            <ul>
+                <li><a href="index.html" class="main-nav-link-a">Home</a></li>
+                <li><a href="blog.html" class="main-nav-link-a active">Blog</a></li>
+                <li><a href="contact.html" class="main-nav-link-a">Contact</a></li>
+                <li><a href="research.html" class="main-nav-link-a">Research</a></li>
+                <li class="search-li">
+                    <div class="navbar-search">
+                        <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                        <input type="search" name="Search" id="" placeholder="Search">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar that will be visible over 1100 px width (Mobile view) -->
+
+    <!-- Banner of the webpage -->
+    <div class="faq-banner">
+        <div class="faq-banner-title">
+            <h1>BLOG</h1>
+        </div>
+    </div>
+    <!-- End of Banner of the webpage -->
+
+    <!-- Start of Essay -->
+    <div class="faq-questions" id="faqQuestions">
+        <!-- Start of Essay topic -->
+        <div class="question" id="question1">
+            <h2 style="font-size: 35px;">How has technology affected my life</h2>
+        </div>
+        <!-- End of essay topic -->
+
+        <div class="answer" id="answer1">
+            <p>
+                <span>T</span>echnology, which literally means "machinery and equipment developed from the application of scientific
+                knowledge" is often used with subjects like computers and other branches of information system but in reality tecnology has a broader
+                reach than just dealing with computers. Along with time technology has steadily evolved and still evolving and at a foresight the evolution seems
+                never-ending. The never-ending evolving demeanour has made mankind too dependent of technology. Especially for me, being a student learning to code I 
+                spend most of the time around technologies be it software related or hardware related 
+                making me heavily dependent upon technology affecting which at times has made my life enjoyable and easy but also stressful and tiring sometimes.
+                <a id="plus1" onclick="expandAnswer(1)" style="font-size: 35px;">Read More...</a>
+            </p>
+            <p>
+                The first and foremost impact of technology on my life was with how my ways of learning changed over time. With the existance of internet and multiple 
+                plaltforms that deal with providing education on the web. Learning has been easier and reliable a reason to this might be the COVID-19 outbreak which changed 
+                people's life in many ways. A few clicks here and there could give a student information worth more that reading a book. For Instance, If I were unable to 
+                undestand a specific topic I can search for an alternate explanation coming from a different mentor. Similarly, I spend most of my day watching movies, animes, 
+                and playing games which relaxes my mind and adds the experince to new content on the web. I use many technologies such as mobile phones, earphones, tv, etc,. On a daily basis. 
+                Communication is important in today's society which is made easier due to modern day technologies I myself spend a decent segment of time communicating with the people around me 
+                with the help of technologies.
+            </p>
+            <p>
+                Just as a coin has two sides technology also comes with the disadvantages. Since it has made me heavily reliable to itself I sometimes end up searching simple 
+                commonsensical things on internet. For instance, use of calculators have made me forget simple multiplication or divison. Overuse of technology lowers the creativity 
+                of an individual. Not only that overuse of technology can lead to serious physical as well as mental problems. I sometimes overuse computer unknowingly which 
+                makes me mentally tired and stressed. In addition to that, overuse of technology causes insomnia hearing audio through headphones for a long time cause ear problems 
+                in the future.
+            </p>
+            <p>
+                To sum up, technology changed our life into a simple and easy situation without any doubt. Technology does a lot
+                to make things in life easier, relaiable, and more efficient. This is so we can do more things in a shorter amount of
+                time, expending the least amount of physical and mental energy possible. Although technology has certainly
+                revolutionised the lifestyle of people not all the outcomes are positive but a limited use of technologies have far exceeding benefits for people.
+                <a id="cross1" onclick="shrinkAnswer(1)" style="font-size: 35px;">Read Less...</a>
+            </p>
+        </div>
+    </div>
+    <!-- End of Essay -->
+
+    <!-- Start of webpage footer -->
+    <footer>
+        <!-- Start of subscription div -->
+        <a class="subscribe-text">Connect with us</a>
+        <div class="footer-subscribe">
+            <div class="form">
+                <input type="email" id = "subscriptionEmail" placeholder="E-mail">
+                <input type="submit" value="Go" class="subscribe" onclick="subscribe()">
+            </div>
+            <div id="subscription-div" onclick="subscribe()">
+                <div class="subscription-status">
+                    <h1>Subscription Verification</h1>
+                    <div id="sub-img-div"></div>
+                    <div id="explanation"></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- End of subscription div -->
+
+        <!-- Start of social media links -->
+        <div class="socials">
+            <ul>
+                <li class="footer-link-topic">Socials</li>
+                <li class="margintop"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" style="color: #4267B2;"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter" style="color: #00acee;"></i></a></li>
+                <li><a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-reddit" style="color: #ff4500;"></i></a></li>
+                <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+        <!-- End of social media links -->
+
+        <!-- Start of useful links -->
+        <div class="footer-links-one">
+            <ul>
+                <li class="footer-link-topic">Useful Links</li>
+                <li class="margintop"><a href="research.html#research1">Navbar</a></li>
+                <li><a href="research.html#research2">Footer</a></li>
+                <li><a href="research.html#research3">Item-Slider</a></li>
+                <li><a href="research.html#research5">Contact Us</a></li>
+                <li><a href="research.html#research6">Products</a></li>
+            </ul>
+        </div>
+        <!-- End of useful links -->
+
+        <!-- Start of product links -->
+        <div class="footer-links-two">
+            <ul>
+                <li class="footer-link-topic">Products</li>
+                <li class="margintop"><a href="iphone.html">Apple</a></li>
+                <li><a href="samsung.html">Samsung</a></li>
+                <li><a href="motorolla.html">Motorolla</a></li>
+                <li><a href="google.html">Google</a></li>
+                <li><a href="xiaomi.html">Xiaomi</a></li>
+            </ul>
+        </div>
+        <!-- End of product links -->
+    </footer>
+    <!-- End of webpage footer -->
+
+    <!-- Start of Copyright Section -->
+    <div class="copyright">
+        <p> &copy;<a href="https://www.aakashacharya.com.np" class="copyright-text">Aakash</a></p>
+    </div>
+    <!-- End of Copyright Section -->
+</body>
+</html>
