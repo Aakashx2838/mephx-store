@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Link to import google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- Meta tags for browser info -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta tags for SEO -->
+        <meta name="author" content="Aakash Acharya">
+        <meta name="description" content="Our store is the #1 opened webpage in Nepal, we deliver best services. Don't miss out. Order Now!!"/>
+        <meta name="keywords" content="MEPHX, iPhone, Samsung, Google, Google Pixel, Pixel, Motorolla, Xiaomi, Store, Nepal, Aakash, shop, order">
+        <!-- Title of the webpage -->
+        <title>Home</title>
+        <!-- Link to website's CSS files and Icon/Logo for website -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+        <!-- Fontawesome script to use icons -->
+        <script src="https://kit.fontawesome.com/86f6b8ce70.js" crossorigin="anonymous"></script>
+        <!-- Link to websites main javascript file -->
+        <script defer src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- Navbar that will be visible over 1100 px width (Desktop view) -->
+        <nav id="opacityManipulation">
+            <a href="index.html" class="nav-icon"><img class="nav-icon" src="images/icon.png"></a>
+            <a href="index.html">mephx</a>
+            <div class="main-nav-link">
+                <ul>
+                    <li><a href="index.html" class="main-nav-link-a active">Home</a></li>
+                    <li><a href="blog.html" class="main-nav-link-a">Blog</a></li>
+                    <li><a href="contact.html" class="main-nav-link-a">Contact</a></li>
+                    <li><a href="research.html" class="main-nav-link-a">Research</a></li>
+                    <li>
+                        <div class="navbar-search">
+                            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                            <input type="search" name="Search" id="" placeholder="Search">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars fa-3x icon-edit" onclick="mobileNavbar()"></i>
+        </nav>
+        <!-- End of Navbar that will be visible over 1100 px width (Desktop view) -->
+
+        <!-- Navbar that will be visible after 1100 px width (Mobile view) -->
+        <nav class="mobileNavbar" id="mobileNavbar">
+            <i class="fa-solid fa-bars fa-3x icon-edit" onclick="mobileNavbar()"></i>
+            <div class="mobile-icon-name-container">
+                <a href="index.html" class="nav-icon"><img class="mobile-nav-icon" src="images/icon.png"></a>
+                <a href="index.html" class="mobile-nav-name">mephx</a>
+            </div>
+            <div class="main-nav-link-mobile">
+                <ul>
+                    <li><a href="index.html" class="main-nav-link-a active">Home</a></li>
+                    <li><a href="blog.html" class="main-nav-link-a">Blog</a></li>
+                    <li><a href="contact.html" class="main-nav-link-a">Contact</a></li>
+                    <li><a href="research.html" class="main-nav-link-a">Research</a></li>
+                    <li class="search-li">
+                        <div class="navbar-search">
+                            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                            <input type="search" name="Search" id="" placeholder="Search">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar that will be visible over 1100 px width (Mobile view) -->
+
+        <!-- Secondary navbar present only in index.html that has brands of mobile phones -->
+        <div class="nav-item-slider">
+            <ul>
+                <li class="zero-nav-margin">
+                    <a href="iphone.html"><i class="fa-brands fa-apple"></i><span class="nav-item-name">Apple</span></a>
+                </li>
+                <li>
+                    <a href="samsung.html"><i class="fa-brands fa-android"></i><span class="nav-item-name">Samsung</span></a>
+                </li>
+                <li>
+                    <a href="motorolla.html"><i class="fa-solid fa-mobile"></i><span class="nav-item-name">Motorolla</span></a>
+                </li>
+                <li>
+                    <a href="google.html"><i class="fa-brands fa-google"></i><span class="nav-item-name">Google</span></a>
+                </li>
+                <li>
+                    <a href="xiaomi.html"><i class="fa-solid fa-mobile"></i><span class="nav-item-name">Xiaomi</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Secondary navbar present only in index.html that has brands of mobile phones -->
+
+        <!-- Image carousel for index page -->
+        <div class="banner" id="changePhoto">
+            <div class="banner-span-nav">
+                <button class="circle zero-nav-margin" id="circle1" onclick="bannerPhotoForce(0)"></button>
+                <button class="circle" id="circle2" onclick="bannerPhotoForce(1)"></button>
+                <button class="circle" id="circle3" onclick="bannerPhotoForce(2)"></button>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", bannerPhoto);
+                //Function to change image in the index page banner
+                function bannerPhotoForce(n){
+                    let imageHolder = document.getElementById("changePhoto");
+                    let imageList = ["url('images/try.png')" , "url('images/try2.png')" , "url('images/try3.png')"];
+                    imageHolder.style.backgroundImage = imageList[n];
+                }
+
+
+                //Sets timer to change the images
+                var count = 3;
+                bannerPhoto(count);
+
+                function bannerPhoto(timer) {
+                    var intervalID;
+                    intervalID = setInterval(function () {
+                        timer = timer - 1;
+
+                        bannerPhotoForce(timer);
+
+                        if (timer < 0) {
+                            timer = 3;
+                        }
+                    }, 2000);
+                }
+            </script>
+        </div>
+        <!-- End of Image carousel for index page -->
+
+        <!-- Slidable highlights div -->
+        <div class="highlight">
+            <!-- Slidable highlight mobile phone cards -->
+            <h1>Mobile Phones</h1>
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="xiaomi.html">
+                            <div class="col zero-nav-margin">
+                                <div class="col-inner">
+                                    <img src="images/new-mi12.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="samsung.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/new-gs22.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="motorolla.html">
+                            <div class="col ">
+                                <div class="col-inner">
+                                    <img src="images/new-mr.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iphone.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/new-ip13pm.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="google.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/new-gp6p.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Slidable highlight mobile phone cards -->
+
+            <!-- Extra cards just for content -->
+            <h1>Earphones</h1>
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col zero-nav-margin">
+                                <div class="col-inner">
+                                    <img src="images/extra-apm.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-app.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-ne1.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-gb.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-opb.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Extra cards just for content -->
+
+            <!-- Extra cards just for content -->
+            <h1>Smart Watches</h1>
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col zero-nav-margin">
+                                <div class="col-inner">
+                                    <img src="images/extra-aws7.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-sgw.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-opsw.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-misw.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nfpage.html">
+                            <div class="col">
+                                <div class="col-inner">
+                                    <img src="images/extra-misw2.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Extra cards just for content -->
+        </div>
+        <!-- Slidable highlights div -->
+
+        <!-- Start of webpage footer -->
+        <footer>
+            <!-- Start of subscription div -->
+            <a class="subscribe-text">Connect with us</a>
+            <div class="footer-subscribe">
+                <div class="form">
+                    <input type="email" id = "subscriptionEmail" placeholder="E-mail">
+                    <input type="submit" value="Go" class="subscribe" onclick="subscribe()">
+                </div>
+                <div id="subscription-div" onclick="subscribe()">
+                    <div class="subscription-status">
+                        <h1>Subscription Verification</h1>
+                        <div id="sub-img-div"></div>
+                        <div id="explanation"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- End of subscription div -->
+
+            <!-- Start of social media links -->
+            <div class="socials">
+                <ul>
+                    <li class="footer-link-topic">Socials</li>
+                    <li class="margintop"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" style="color: #4267B2;"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter" style="color: #00acee;"></i></a></li>
+                    <li><a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-reddit" style="color: #ff4500;"></i></a></li>
+                    <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+            <!-- End of social media links -->
+
+            <!-- Start of useful links -->
+            <div class="footer-links-one">
+                <ul>
+                    <li class="footer-link-topic">Useful Links</li>
+                    <li class="margintop"><a href="research.html#research1">Navbar</a></li>
+                    <li><a href="research.html#research2">Footer</a></li>
+                    <li><a href="research.html#research3">Item-Slider</a></li>
+                    <li><a href="research.html#research5">Contact Us</a></li>
+                    <li><a href="research.html#research6">Products</a></li>
+                </ul>
+            </div>
+            <!-- End of useful links -->
+
+            <!-- Start of product links -->
+            <div class="footer-links-two">
+                <ul>
+                    <li class="footer-link-topic">Products</li>
+                    <li class="margintop"><a href="iphone.html">Apple</a></li>
+                    <li><a href="samsung.html">Samsung</a></li>
+                    <li><a href="motorolla.html">Motorolla</a></li>
+                    <li><a href="google.html">Google</a></li>
+                    <li><a href="xiaomi.html">Xiaomi</a></li>
+                </ul>
+            </div>
+            <!-- End of product links -->
+        </footer>
+        <!-- End of webpage footer -->
+
+        <!-- Start of Copyright Section -->
+        <div class="copyright">
+            <p> &copy;<a href="https://www.aakashacharya.com.np" class="copyright-text">Aakash</a></p>
+        </div>
+        <!-- End of Copyright Section -->
+    </body>
+</html>

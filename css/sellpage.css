@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* This section of code defines the properties for the phone viewer
+and the phone name/details div */
+.phone-content{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.page-location h2{
+    margin-left: 50px !important;
+    color: rgb(71, 71, 71);
+    margin: 10px;
+}
+.phone-viewer, .detail-viewer{
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+}
+.phone-viewer{
+    display: flex;
+}
+.detail-viewer{
+    overflow-y: scroll;
+}
+.detail-viewer::-webkit-scrollbar{
+    display: none;
+}
+.fa-tags{
+    font-size: 1.5em;
+}
+.phone-image-slider{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-top: 50px;
+    height: 50%;
+}
+.phone-image-slider div{
+    position: relative;
+    width: 100px;
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.phone-image-slider div:hover{
+    border: 2px solid #ebebeb;
+    transform: scale(0.9);
+}
+.phone-image-slider div img{
+    position: relative;
+    width: 100%;
+}
+.phone-selected-image{
+    margin-left: 10%;
+    overflow: hidden;
+}
+.phone-selected-image-content{
+    width: 300px;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: .4s ease-in-out;
+}
+.like-share{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+.like-share .fa-solid-edit{
+    font-size: 30px;
+    margin-left: 30px;
+}
+#like{
+    color: white;
+}
+.like-share .fa-share:hover{
+    cursor: pointer;
+    color: rgb(126, 126, 126);
+}
+.description-heading{
+    font-size: 30px;
+    line-height: 32px;
+    line-height: 40px;
+}
+.description{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.description .specs p{
+    line-height: 5px;
+}
+.description-paragraph{
+    text-align: justify;
+    font-size: 23px;
+}
+.description ul li{
+    line-height: 27px;
+}
+button{
+    height: 50px;
+    width: 80px;
+    background-color: #111;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    border: 2px solid rgb(71, 71, 71);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+button:hover{
+    transform: scale(1.2);
+    background-color: rgb(47, 46, 46);
+    color: #bbb;
+}
+.discount,h2 .locator, .page-location h2, .price, .inclot, .specs h2, .specs ul li, .offers-table td, .description-heading, button, .overview h2, .overview ul li, .full-specifications th, .full-specifications td{
+    font-family: 'Raleway', sans-serif;
+}  
+.discount{
+    font-weight: 700;
+    color: #ff02b9;
+    border: 3px solid #ff02b9;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+}
+.rating{
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+.fa-star, .fa-star-half-stroke{
+    font-size: 1.3em;
+    color: #00c09e;
+    margin-left: 10px;
+}
+.price{
+    font-size: 35px;
+    font-weight: 700;
+}
+.line-through{
+    font-size: 30px;
+    color: #bbb;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.specs{
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.specs ul li, .overview ul li{
+    list-style: circle;
+    font-size: 20px;
+    line-height: 32px;
+}
+.offers-table{
+    padding: 10px;
+    text-align: left;
+    border-spacing: 20px;
+}
+.offers-table td{
+    line-height: 25px;
+}
+.overview{
+    margin-top: 30px !important;
+    border-radius: 10px;
+    border: 2px solid  rgb(71, 71, 71);
+    width: 95%;
+    margin: auto;
+    padding: 30px;
+}
+.full-specifications{
+    width: 100%;
+}
+.full-specifications th{
+    color: #00c09e;
+    font-size: 25px;
+    text-align: left;
+}
+.full-specifications td{
+    width: 25%;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px;
+}
+.full-spec-overview{
+    height: fit-content;
+    overflow-x: scroll;
+}
+@media only screen and (min-width: 1500px){
+    .full-spec-overview{
+        height: 450px;
+        overflow: hidden;
+        transition: ease-in-out 2s;
+    }
+    .full-spec-overview:hover{
+        height: 1400px;
+    }
+    .phone-content{
+        flex-direction: row;
+        height: calc( 1000px - 100px );
+    }
+    .phone-viewer, .detail-viewer{
+        width: 50%;
+    }
+    .detail-viewer{
+        overflow-y: scroll;
+    }
+    .phone-selected-image-content{
+        height: 80%;   
+    }
+    .phone-image-slider{
+        margin-top: 18%;
+    }
+    .like-share{
+        margin-top: 20px;
+    }
+    .phone-selected-image-content{
+        /* margin-left: 15%; */
+        margin-left: 8%;
+        width: 500px;
+        margin-top: 15%;
+    }
+    .description{
+        padding: 50px;
+    }
+    .overview{
+        width: 80%;
+    }
+    .like-share{
+        right: 50%;
+    }
+}
